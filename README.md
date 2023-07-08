@@ -26,7 +26,9 @@ Technically, we do not need to create wav files (MFA can handle mp3), but MFA do
 Or, just generate TextGrids with speaker ID in the tier name, and only based on validated files, then run the following to move the corresponding wav files into the same folder and in the shell, run: 
 
 cut -f2 validated.tsv | tail -n +2 > mp3_paths.tsv
+
 for file in $(<list.txt); do cp "$file" new_folder; done
+
 for file in $(<mp3_paths.tsv); do cp clips/"$file" validated/; done
 
 **Prep lexicon**
@@ -42,6 +44,7 @@ python3 run_epitran.py indonesian.txt indonesian_lexicon.txt ind-Latn
 
 7.	If XPF, create custom Python script to separate phones with spaces
 See for example:
+
 python3 ukrainian.py xpf_output_ukrainian.txt
 
 **Run Montreal Forced Aligner**
