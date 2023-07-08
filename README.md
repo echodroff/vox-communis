@@ -65,5 +65,4 @@ mfa train --clean ~/Documents/CommonVoice/languages/indonesian/validated indones
 13.	Align corpus using new acoustic model
 
 mfa align ~/Documents/CommonVoice/languages/indonesian/validated indonesian_lexicon indonesian_cv10 ~/Documents/CommonVoice/languages/indonesian/output/
-![image](https://github.com/echodroff/vox-communis/assets/9872307/2b7cca01-9bcc-420f-bbd1-31a64c6f2436)
 
