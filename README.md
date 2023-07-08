@@ -1,12 +1,14 @@
 # vox-communis
 Resources to create acoustic models and TextGrids with word- and phone alignments and to extract phonetic measures, derived from the Common Voice Corpus
 
-Common Voice Processing Instructions
-Prep files and generate lexicon, acoustic model, forced alignment
+## Common Voice Processing Instructions**
+
+**Prep files and generate lexicon, acoustic model, forced alignment**
 
 1.	Download language from Common Voice
 
-Prep wav files and TextGrids
+**Prep wav files and TextGrids**
+
 2.	Get speaker IDs to put on TextGrids for speaker adaptation
 
 Run remap_spkrs.py
@@ -27,7 +29,8 @@ cut -f2 validated.tsv | tail -n +2 > mp3_paths.tsv
 for file in $(<list.txt); do cp "$file" new_folder; done
 for file in $(<mp3_paths.tsv); do cp clips/"$file" validated/; done
 
-Prep lexicon
+**Prep lexicon**
+
 5.	Extract transcripts from validated.tsv and get each word on its own line
 
 In the shell, run:
@@ -41,7 +44,8 @@ python3 run_epitran.py indonesian.txt indonesian_lexicon.txt ind-Latn
 See for example:
 python3 ukrainian.py xpf_output_ukrainian.txt
 
-Run MFA
+**Run Montreal Forced Aligner**
+
 8.	Activate the aligner
 
 conda activate aligner
