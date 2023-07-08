@@ -1,7 +1,7 @@
 # vox-communis
 Resources to create acoustic models and TextGrids with word- and phone alignments and to extract phonetic measures, derived from the Common Voice Corpus
 
-## Common Voice Processing Instructions**
+## Common Voice Processing Instructions
 
 **Prep files and generate lexicon, acoustic model, forced alignment**
 
