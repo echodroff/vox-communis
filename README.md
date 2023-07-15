@@ -13,7 +13,7 @@ Resources to create acoustic models and TextGrids with word- and phone alignment
 Run remap_spkrs.py
 
 ```python
-python3 ~/Desktop/remap_spkrs.py /Users/eleanor/Documents/CommonVoice/languages/indonesian/validated.tsv /Users/eleanor/Documents/CommonVoice/languages/indonesian/validated_spkr.tsv
+python3 remap_spkrs.py CommonVoice/languages/indonesian/validated.tsv CommonVoice/languages/indonesian/validated_spkr.tsv
 ```
 
 3.	Create validated folder
