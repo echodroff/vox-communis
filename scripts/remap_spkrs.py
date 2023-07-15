@@ -1,12 +1,9 @@
-# Written by Emily Ahn
-# 2021
-# remap Common Voice client IDs to unique speaker IDs (in order of appearance)
-
 import sys
 import csv
 
-
-# remap client_id to a simpler speaker_id
+# written by Emily P. Ahn for VoxCommunis
+# 2021
+# remap Common Voice client_id to a simpler speaker_id (in order of appearance)
 # add speaker_id as column to TSV (i.e. validated.tsv)
 # write out that file to save it
 # To run:
