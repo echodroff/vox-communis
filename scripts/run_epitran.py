@@ -1,14 +1,14 @@
-
 import epitran
 import csv
 import re
 import sys
 
+# written by Emily P. Ahn for VoxCommunis
+# 2021
 
 # To run:
 #	python q_epi_wordlist.py {txt_infile} {lex_outfile} {epi_code}
 #	ex: py src/q_epi_wordlist.py data/comvoi/polish_oovs_found.txt data/comvoi/polish_oovs_epi.txt pol-Latn
-
 
 cv_txtfile = sys.argv[1]
 lex_outfile = sys.argv[2]
