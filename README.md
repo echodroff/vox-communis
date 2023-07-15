@@ -8,7 +8,7 @@ Resources to create acoustic models and TextGrids with word- and phone alignment
 
 1.	Download language from Common Voice
 
-2.	Get speaker IDs to put on TextGrids for speaker adaptation
+2.	Get speaker IDs to put on TextGrids for speaker adaptation. This operates on validated.tsv included in the download. 
 
 Run remap_spkrs.py
 
@@ -16,9 +16,9 @@ Run remap_spkrs.py
 python3 remap_spkrs.py CommonVoice/languages/indonesian/validated.tsv CommonVoice/languages/indonesian/validated_spkr.tsv
 ```
 
-3.	Create validated folder
-
-4.	Create TextGrids based on transcript + wav files for ease of use
+3.	Create validated folder within downloaded Common Voice folder to store TextGrids
+ 
+4.	Create TextGrids based on the transcript in validated_spkr.tsv generated in Step 2. Optionally generate wav files with same filename.
 
 Run processCommonVoice_v2.praat or createTextGridsWav.praat
 
