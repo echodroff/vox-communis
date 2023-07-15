@@ -1,5 +1,5 @@
 # vox-communis
-Resources to create acoustic models and TextGrids with word- and phone alignments and to extract phonetic measures, derived from the Common Voice Corpus
+Resources to create acoustic models and TextGrids with word- and phone alignments and to extract phonetic measures, derived from the Common Voice Corpus. Derived resources (acoustic models, lexicons, TextGrids, and formants) can be found at https://osf.io/t957v/. 
 
 ## Common Voice Processing Instructions
 **Prep files and generate lexicon, acoustic model, forced alignment**
@@ -85,3 +85,6 @@ mfa train --clean ~/Documents/CommonVoice/languages/indonesian/validated indones
 ```console
 mfa align ~/Documents/CommonVoice/languages/indonesian/validated indonesian_lexicon indonesian_cv10 ~/Documents/CommonVoice/languages/indonesian/output/
 ```
+
+## Notes about the 2021 analysis
+The formant data we used in the VoxCommunis 2021 LREC paper is in vox-communis-2021-analysis/data/formants_narrow/. These files contain the average F1 and F2 for each speaker and "narrowly defined" vowel in the language. A "narrowly defined" vowel means that we retained all vowels but collapsed across tones. The set of broadly defined vowels in vox-communis-2021-analysis/data/formants_broad means that we collapsed vowels across tone, length, and nasality. Each speaker was classified as having a high or low formant extraction setting based on the lesser Mahalonobis-distance of their overall F1/F2 average to the overall language-specific F1 and F2 means. More information about speaker formant setting assignment can be found in the outliers repo from Emily P. Ahn here: https://github.com/emilyahn/outliers. 
