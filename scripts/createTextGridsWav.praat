@@ -1,7 +1,7 @@
-dir$ = "/Users/eleanor/Documents/CommonVoice/languages/indonesian/"
-filetype$ = "validated"
+dir$ = "/Users/eleanor/Documents/CommonVoice/data/sorbian_upper15/"
+output_folder$ = "validated/"
+dir_filetype$ = dir$ + output_folder$
 tsv_file$ = "validated_spkr.tsv"
-dir_filetype$ = dir$ + filetype$ + "/"
 Read Table from tab-separated file: dir$ + tsv_file$
 Rename: "files"
 
