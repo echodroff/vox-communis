@@ -8,7 +8,7 @@
 
 import sys, codecs, re
 
-file = 'sorbian.txt'
+file = 'XPF_UpperSorbian_translations.txt'
 new_dict = codecs.open('sorbian_lexicon.txt', 'w', "utf-8")
 
 
@@ -22,5 +22,5 @@ for line in f:
     phon = re.sub('t ʃ','tʃ', phon)
     phon = re.sub('t s','ts', phon)
     phon = re.sub('d ʒ','dʒ', phon)
-
-    new_dict.write(orth + '\t' + phon)
+    if "@" not in phon:
+    	new_dict.write(orth + '\t' + phon)
